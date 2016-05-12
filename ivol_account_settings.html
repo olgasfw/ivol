@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>iVolunteers Home</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+    <!-- Social buttons css for Bootstrap -->
+    <link href="assets/bootstrap-social.css" rel="stylesheet">
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- font awesome (for icons) css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- afp custom css -->
+    <link href="assets/custom.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
+    <!-- Roboto Slab for page headers and legends when page header -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700' rel='stylesheet' type='text/css'>
+
+
+    <script>
+        $('#profile-tabs').click(function(e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
+
+    </script>
+
+
+</head>
+
+
+<body>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img alt="Client Logo" src="assets/afp-black.png">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+                <ul class="nav navbar-nav navbar-right">
+
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">John Smith<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                            <li><a href="#">My Account</a></li>
+
+                            <li><a href="#">Log Out</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Action Center</a></li>
+
+                    <li><a href="#">Donate</a></li>
+
+
+
+
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+
+
+
+
+    <div class="container">
+
+        <div class="row profile-volunteer">
+            <div class="col-sm-6">
+                <h3>John Smith</h3>
+                <address>Fairfax, VA</address>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="row highlights">
+                    <div class="col-xs-4"><strong>410</strong> <span class="call-out">Calls Attemped</span></div>
+                    <div class="col-xs-4"><strong>19</strong> <span class="call-out">Calls Completed</span></div>
+                    <div class="col-xs-4"><strong>21</strong> <span class="call-out"> Petitions Signed </span></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <!-- Account Nav Tabs  -->
+                <ul class="nav nav-tabs nav-filter" role="tablist" id="#profile-tabs">
+                    <li role="presentation" class="active nav-profile-link">
+                        <a href="#account-settings" role="tab" data-toggle="tab" aria-controls="account-settings">Account Settings</a></li>
+                    <li role="presentation" class="nav-profile-link">
+                        <a href="#signed-petitions" role="tab" data-toggle="tab" aria-controls="signed-petitions">  Signed Petitions</a>
+                    </li>
+                    <li role="presentation" class="nav-profile-link">
+                        <a href="#call-history" role="tab" data-toggle="tab"> Call History</a>
+                    </li>
+                    <li role="presentation" class="nav-profile-link">
+                        <a href="#profile" role="tab" data-toggle="tab">Profile</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Tab panels -->
+        <div class="tab-content" id="tabs">
+
+            <!-- ****** ACCOUNT SETTINGS SECTIONS ******* -->
+
+            <div role="tabpanel" class="tab-pane fade in active" id="account-settings">
+
+
+
+                <form class="user-form">
+
+                    <!-- Login Credentials fieldset -->
+
+                    <fieldset class="fieldset-login form-fieldset">
+
+
+                        <legend class="login"> Login Credentials</legend>
+                        <div class="panel panel-body panel-form">
+                            <div class="row">
+                                <div class="col-sm-3 required">
+                                    <label for="disabledTextInput">Current Password</label>
+                                    <input type="password" class="form-control" placeholder="***********">
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="btn btn-primary">Show</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="btn btn-default">Change</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+
+
+                    <!--Personal Interests fieldset-->
+                    <fieldset class="fieldset-interests form-fieldset">
+                        <legend class="interests"> Personal Interests</legend>
+                        <div class="panel panel-body panel-form">
+
+
+                            <div class="row item-select-row">
+                                <!--Actions Sections-->
+                                <div class="col-sm-4">
+                                    <label class="item-select-header">Things I'd Like to Do </label>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">Lorem ipsum consectetur adipisicing</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">Dolor sit amet</label>
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">Consectetur adipisicing elit</label>
+                                    </div>
+                                </div>
+                                <!--Issues Section-->
+                                <div class="col-sm-4">
+                                    <label class="item-select-header">Issues I Care About</label>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">Repudiandae assumenda</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">Na magni consequatur perspiciatis commodi</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">Consectetur adipisicing elit</label>
+                                    </div>
+                                </div>
+                                <!--Groups Section-->
+                                <div class="col-sm-4">
+                                    <label class="item-select-header">Groups I'd Like to Join</label>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">Necessitatibus quidem enim tenetur </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">Consequatur dolor veniam </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" value="">Amet, consectetur adipisicing elit</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row item-select-row">
+                                <div class="col-sm-2">
+                                    <button type="submit" class="btn btn-primary">SAVE</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                </form>
+            </div>
+
+
+
+
+            <!-- ***** PETITIONS SECTION -->
+            <div role="tabpanel" class="tab-pane fade" id="signed-petitions">
+
+                <div class="panel panel-body">
+
+                    <div class="row view-petitions-calls">
+
+                        <div class="col-xs-2 hidden-xs">
+                            <img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="col-xs-8">
+                            <h3><a href="#">Get Your Signed Copy of Dick and Liz Cheney’s New Book lorem</a> </h3> 
+                            <date>10/22/2015</date>
+
+                        </div>
+
+                        <div class="col-xs-2">
+                            <h4 class="h4-stats">2,103</h4>
+                            <p class="p-stats">Signatures</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row view-petitions-calls">
+
+                        <div class="col-xs-2 hidden-xs">
+                            <img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="col-xs-8">
+                            <h3><a href="#">Get Your Signed Copy of Dick and Liz Cheney’s New Book lorem</a> </h3> Date of Signature:
+                            <date>10/22/2015</date>
+
+                        </div>
+
+                        <div class="col-xs-2">
+                            <h4 class="h4-stats">2,103</h4>
+                            <p class="p-stats">Signatures</p>
+                        </div>
+                    </div>
+
+                    <div class="row view-petitions-calls">
+
+                        <div class="col-xs-2 hidden-xs">
+                            <img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="col-xs-8">
+                            <h3><a href="#">Get Your Signed Copy of Dick and Liz Cheney’s New Book lorem</a> </h3> Date of Signature:
+                            <date>10/22/2015</date>
+
+                        </div>
+
+                        <div class="col-xs-2">
+                            <h4 class="h4-stats">2,103</h4>
+                            <p class="p-stats">Signatures</p>
+                        </div>
+                    </div>
+
+                    <div class="row view-petitions-calls">
+
+                        <div class="col-xs-2 hidden-xs">
+                            <img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="col-xs-8">
+                            <h3><a href="#">Get Your Signed Copy of Dick and Liz Cheney’s New Book lorem</a> </h3> Date of Signature:
+                            <date>10/22/2015</date>
+
+                        </div>
+
+                        <div class="col-xs-2">
+                            <h4 class="h4-stats">2,103</h4>
+                            <p class="p-stats">Signatures</p>
+                        </div>
+                    </div>
+
+                    <div class="row view-petitions-calls">
+
+                        <div class="col-xs-2 hidden-xs">
+                            <img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive">
+                        </div>
+
+                        <div class="col-xs-8">
+                            <h3><a href="#">Get Your Signed Copy of Dick and Liz Cheney’s New Book lorem</a> </h3> Date of Signature:
+                            <date>10/22/2015</date>
+
+                        </div>
+
+                        <div class="col-xs-2">
+                            <h4 class="h4-stats">2,103</h4>
+                            <p class="p-stats">Signatures</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <!-- CALL HISTORY SECTION -->
+
+
+            <div role="tabpanel" class="tab-pane fade" id="call-history">
+
+
+                <div class="panel panel-body">
+
+
+
+                    <div class="row view-petitions-calls">
+
+                        <div class="col-sm-2 hidden-xs">
+                            <img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive">
+                        </div>
+
+                        <div class=" col-sm-6 col-xs-12">
+                            <h3><a href="#">Make calls or knock doors on our next Day of Action</a> </h3> Date of Call:
+                            <date>10/22/2015</date>
+
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <h4 class="h4-stats">103</h4>
+                            <p class="p-stats">Calls Attempted</p>
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <h4 class="h4-stats">12</h4>
+                            <p class="p-stats">Calls Completed</p>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row view-petitions-calls">
+
+                        <div class="col-xs-2 hidden-xs">
+                            <img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive">
+                        </div>
+
+                        <div class=" col-sm-6 col-xs-12">
+                            <h3><a href="#">Make calls or knock doors on our next Day of Action</a> </h3> Date of Call:
+                            <date>10/22/2015</date>
+
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <h4 class="h4-stats">103</h4>
+                            <p class="p-stats">Calls Attempted</p>
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <h4 class="h4-stats">12</h4>
+                            <p class="p-stats">Calls Completed</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="row view-petitions-calls">
+
+                        <div class="col-xs-2 hidden-xs">
+                            <img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive">
+                        </div>
+
+                        <div class=" col-sm-6 col-xs-12">
+                            <h3><a href="#">Make calls or knock doors on our next Day of Action</a> </h3> Date of Call:
+                            <date>10/22/2015</date>
+
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <h4 class="h4-stats">103</h4>
+                            <p class="p-stats">Calls Attempted</p>
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <h4 class="h4-stats">12</h4>
+                            <p class="p-stats">Calls Completed</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="row view-petitions-calls">
+
+                        <div class="col-xs-2 hidden-xs">
+                            <img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive">
+                        </div>
+
+                        <div class=" col-sm-6 col-xs-12">
+                            <h3><a href="#">Make calls or knock doors on our next Day of Action</a> </h3> Date of Call:
+                            <date>10/22/2015</date>
+
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <h4 class="h4-stats">103</h4>
+                            <p class="p-stats">Calls Attempted</p>
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <h4 class="h4-stats">12</h4>
+                            <p class="p-stats">Calls Completed</p>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="row view-petitions-calls">
+
+                        <div class="col-xs-2 hidden-xs">
+                            <img alt="Petitions Photo" src="images/image_placeholders/344x172_thumb.jpg" class="img-responsive">
+                        </div>
+
+                        <div class=" col-sm-6 col-xs-12">
+                            <h3><a href="#">Make calls or knock doors on our next Day of Action</a> </h3> Date of Call:
+                            <date>10/22/2015</date>
+
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <h4 class="h4-stats">103</h4>
+                            <p class="p-stats">Calls Attempted</p>
+                        </div>
+
+                        <div class="col-sm-2 col-xs-6">
+                            <h4 class="h4-stats">12</h4>
+                            <p class="p-stats">Calls Completed</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <nav>
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- ****** PROFILE SECTIONS ******* -->
+
+            <div role="tabpanel" class="tab-pane fade" id="profile">
+
+                <form class="user-form">
+                    <p class="fields-descriptor">All fields in bold are required</p>
+                    <!-- Personal Information fieldset -->
+
+                    <fieldset class="fieldset-profile form-fieldset">
+
+                        <legend class="personal"> Personal Information</legend>
+
+
+                        <div class="panel panel-body panel-form">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <label for="disabledTextInput">Suffix</label>
+                                    <input type="text" class="form-control" placeholder="Suffix">
+                                </div>
+
+
+                                <div class="col-sm-3 required">
+                                    <label for=" ">First Name</label>
+                                    <input type="text" class="form-control" placeholder="First Name">
+                                </div>
+
+                                <div class="col-sm-3 required">
+                                    <label for=" ">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Last Name" required>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </fieldset>
+
+
+                    <!-- Current Address  fieldset -->
+                    <fieldset class="fieldset-profile form-fieldset">
+
+                        <legend class="address"> Current Address</legend>
+
+
+                        <div class="panel panel-body panel-form">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label for="disabledTextInput">Address 1</label>
+                                    <input type="text" class="form-control" placeholder="Address 1">
+                                </div>
+
+
+                                <div class="col-sm-4">
+                                    <label for=" ">Address 2</label>
+                                    <input type="text" class="form-control" placeholder="Address 2 ">
+                                </div>
+
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-sm-4">
+                                    <label for="disabledTextInput">City</label>
+                                    <input type="text" class="form-control" placeholder="City">
+                                </div>
+
+
+                                <div class="col-sm-2">
+                                    <label for=" ">State</label>
+                                    <select class="form-control">
+                                        <option>State</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+
+
+
+                                <div class="col-sm-2 required">
+                                    <label for=" ">Zip Code</label>
+                                    <input type="text" class="form-control missing-field" placeholder="Required Field">
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Contact Info fieldset -->
+                    <fieldset class="fieldset-profile form-fieldset">
+                        <legend class="contact">Contact Information</legend>
+
+                        <div class="panel panel-body panel-form">
+                            <div class="row">
+                                <div class="col-sm-2">
+
+                                    <label for="disabledTextInput">Home Phone</label>
+                                    <input type="tel" class="form-control" placeholder="xxx-xxx-xxxx">
+                                </div>
+
+
+                                <div class="col-sm-2">
+
+                                    <label for=" ">Cell Phone</label>
+                                    <input type="tel" class="form-control" placeholder="xx-xxx-xxxx">
+                                </div>
+
+
+                                <div class="col-sm-4">
+                                    <label for="disabledTextInput"><strong>Email</strong></label>
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <button type="submit" class="btn btn-primary">SAVE</button>
+                            </div>
+                        </div>
+
+
+
+                    </fieldset>
+
+
+                </form>
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+
+        <p>&copy; 2016 Footer content placed here. </p>
+
+
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== 
+
+      -->
+
+
+    <script>
+        $("legend.login").prepend("<span class='glyphicon glyphicon-lock' aria-hidden='true'></span>");
+        $("legend.personal").prepend("<span class='glyphicon glyphicon-user' aria-hidden='true'></span>");
+        $("legend.address").prepend("<span class='glyphicon glyphicon-map-marker' aria-hidden='true'></span>");
+        $("legend.contact").prepend("<span class='glyphicon  glyphicon-earphone' aria-hidden='true'></span>");
+        $("legend.credentials").prepend("<span class='glyphicon glyphicon-lock' aria-hidden='true'></span>");
+        $("legend.interests").prepend("<span class='glyphicon  glyphicon-tags' aria-hidden='true'></span>");
+
+    </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+</body>
+
+</html>

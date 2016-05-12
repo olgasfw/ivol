@@ -1,0 +1,52 @@
+			p.call {
+			opacity: .9;
+		}
+		
+		@media (min-width: 1201px) {
+			p.call {
+				font-size: 1.2em;
+				min-height: 170px;
+				opacity: .9;
+			}
+		}
+		
+		@media (max-width: 1200px) {
+			p.call {
+				font-size: 1.2em;
+				margin-top: 20px;
+			}
+			.btn-primary {
+				margin-bottom: 20px;
+			}
+		}
+		
+		
+		
+			@media (max-width: 768px) {
+				.pd-main-container {
+					margin-top: -40px;
+				}
+			}
+			
+			
+			
+			.min_stats {
+				background-color: #f3f3f4;
+				position: fixed;
+				top: 5px;
+				z-index: 1;
+				width: 100%;
+				padding: 18px 20px 10px 22px;
+				margin-top: -10px;
+			}
+
+		
+	@media (min-width: 768px) {
+		
+		body {
+			
+	margin-top: -65px;	
+			
+		}
+		}
+	
